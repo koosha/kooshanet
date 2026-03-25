@@ -35,8 +35,63 @@
                 <a href="https://www.linkedin.com/in/kooshag/" target="_blank" rel="noopener" class="nav-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/koosha" target="_blank" rel="noopener" class="nav-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
+            <div class="hamburger-container">
+                <button
+                    type="button"
+                    id="hamburger-button"
+                    class="hamburger-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-menu">
+                    <span id="hamburger-icon" class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Slide Menu Overlay -->
+    <div id="slide-menu-overlay" class="slide-menu-overlay" aria-hidden="true"></div>
+
+    <!-- Slide Menu Panel -->
+    <div
+        id="mobile-nav-menu"
+        class="slide-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+        aria-hidden="true">
+        <ul class="hamburger-ul">
+            <li class="index-li">
+                <a href="index.html">
+                    <h3>Koosha Golmohammadi</h3>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <h3>About</h3>
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <h3>Resume</h3>
+                </a>
+            </li>
+            <li>
+                <a href="consultation.html">
+                    <h3>Consultation</h3>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <h3>Contact</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- About Section -->
     <section class="page-section">
@@ -55,11 +110,15 @@
                     </p>
 
                     <p>
-                        With a <strong>PhD in Computing Science from the University of Alberta</strong> and an <strong>MBA from MIT Sloan School of Management</strong>, I bring a unique combination of deep technical expertise and strategic business acumen. My career spans leadership roles at JPMorgan Chase, Manulife John Hancock, and the Alberta Machine Intelligence Institute (Amii).
+                        I hold a <strong>PhD in Computing Science from the University of Alberta</strong> and an <strong>MBA from MIT Sloan School of Management</strong>. My journey in AI and machine learning began during my doctoral research, where I worked on advanced data mining and anomaly detection techniques. This foundation led me to roles at IBM, the City of Edmonton, and eventually to leadership positions in the financial services sector.
                     </p>
 
                     <p>
-                        I'm passionate about making AI accessible and impactful. Beyond my corporate role, I serve on the board of <a href="https://alphaplus.ca/" target="_blank" rel="noopener">Alphaplus</a>, advancing equitable access to data-informed learning, and regularly speak at industry events on AI innovation, ethical AI, and real-world applications.
+                        At <strong>Manulife John Hancock</strong>, I served as Director of Data Science, building analytics capabilities that transformed customer intelligence and business operations. At <strong>JPMorgan Chase Wealth Management</strong>, I led Customer Intelligence and Optimization, developing AI-driven solutions that enhanced client experiences and business outcomes.
+                    </p>
+
+                    <p>
+                        I'm passionate about making AI accessible and impactful. Beyond my corporate role, I serve on the board of <a href="https://alphaplus.ca/" target="_blank" rel="noopener">Alphaplus</a>, advancing equitable access to data-informed learning, and regularly speak at industry events on AI innovation, ethical AI, and real-world applications. Today, I focus on responsible AI deployment at scale, ensuring that advanced technologies deliver real value while maintaining ethical standards and regulatory compliance.
                     </p>
                 </div>
 
@@ -96,29 +155,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Background -->
-                <div style="margin-top: 3rem;">
-                    <h2>Background</h2>
-                    <p>
-                        My journey in AI and machine learning began during my doctoral research at the University of Alberta, where I worked on advanced data mining and anomaly detection techniques. This foundation led me to roles at IBM, the City of Edmonton, and eventually to leadership positions in the financial services sector.
-                    </p>
-                    <p>
-                        At <strong>Manulife John Hancock</strong>, I served as Director of Data Science, building analytics capabilities that transformed customer intelligence and business operations. At <strong>JPMorgan Chase Wealth Management</strong>, I led Customer Intelligence and Optimization, developing AI-driven solutions that enhanced client experiences and business outcomes.
-                    </p>
-                    <p>
-                        Today, I focus on responsible AI deployment at scale, ensuring that advanced technologies deliver real value while maintaining ethical standards and regulatory compliance.
-                    </p>
-                </div>
-
-                <!-- Call to Action -->
-                <div style="text-align: center; padding: 3rem 2rem; background-color: var(--color-bg-alt); border-radius: var(--border-radius); margin-top: 3rem;">
-                    <h2>Let's Connect</h2>
-                    <p style="max-width: 600px; margin: 1rem auto 2rem;">
-                        Interested in speaking engagements, advisory opportunities, or collaborative projects? I'd love to hear from you.
-                    </p>
-                    <a href="contact.html" class="button button-primary">Contact Me</a>
-                </div>
             </div>
         </div>
     </section>
@@ -129,5 +165,8 @@
             &copy; 2026 Koosha Golmohammadi. All rights reserved.
         </p>
     </footer>
+
+    <!-- Navigation Script -->
+    <script src="js/navigation.js"></script>
 </body>
 </html>

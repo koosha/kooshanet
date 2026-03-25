@@ -117,8 +117,63 @@
                 <a href="https://www.linkedin.com/in/kooshag/" target="_blank" rel="noopener" class="nav-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/koosha" target="_blank" rel="noopener" class="nav-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
+            <div class="hamburger-container">
+                <button
+                    type="button"
+                    id="hamburger-button"
+                    class="hamburger-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-menu">
+                    <span id="hamburger-icon" class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Slide Menu Overlay -->
+    <div id="slide-menu-overlay" class="slide-menu-overlay" aria-hidden="true"></div>
+
+    <!-- Slide Menu Panel -->
+    <div
+        id="mobile-nav-menu"
+        class="slide-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+        aria-hidden="true">
+        <ul class="hamburger-ul">
+            <li class="index-li">
+                <a href="index.html">
+                    <h3>Koosha Golmohammadi</h3>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <h3>About</h3>
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <h3>Resume</h3>
+                </a>
+            </li>
+            <li>
+                <a href="consultation.html">
+                    <h3>Consultation</h3>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <h3>Contact</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- Resume Page -->
     <section class="resume-page">
@@ -400,5 +455,8 @@
             &copy; 2026 Koosha Golmohammadi. All rights reserved.
         </p>
     </footer>
+
+    <!-- Navigation Script -->
+    <script src="js/navigation.js"></script>
 </body>
 </html>

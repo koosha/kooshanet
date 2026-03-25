@@ -79,8 +79,63 @@
                 <a href="https://www.linkedin.com/in/kooshag/" target="_blank" rel="noopener" class="nav-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/koosha" target="_blank" rel="noopener" class="nav-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
+            <div class="hamburger-container">
+                <button
+                    type="button"
+                    id="hamburger-button"
+                    class="hamburger-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-menu">
+                    <span id="hamburger-icon" class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Slide Menu Overlay -->
+    <div id="slide-menu-overlay" class="slide-menu-overlay" aria-hidden="true"></div>
+
+    <!-- Slide Menu Panel -->
+    <div
+        id="mobile-nav-menu"
+        class="slide-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+        aria-hidden="true">
+        <ul class="hamburger-ul">
+            <li class="index-li">
+                <a href="index.html">
+                    <h3>Koosha Golmohammadi</h3>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <h3>About</h3>
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <h3>Resume</h3>
+                </a>
+            </li>
+            <li>
+                <a href="consultation.html">
+                    <h3>Consultation</h3>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <h3>Contact</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- Main Content -->
     <main style="padding-top: calc(var(--header-height) + 2rem); padding-bottom: var(--space-3xl);">
@@ -145,41 +200,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Past Engagements -->
-                <section class="mt-xl">
-                    <h2 class="text-center" style="margin-bottom: var(--space-lg);">Past Engagements</h2>
-                    <p style="color: var(--color-fg-light); text-align: center; max-width: 700px; margin: 0 auto var(--space-2xl);">
-                        Selected speaking engagements and advisory roles
-                    </p>
-
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg);">
-                        <div style="padding: var(--space-lg); background-color: var(--color-bg-alt); border-radius: var(--border-radius);">
-                            <h4 style="color: var(--color-accent); margin-bottom: var(--space-xs);">Toronto Machine Learning Summit</h4>
-                            <p style="font-size: var(--text-sm); color: var(--color-fg-light); margin-bottom: var(--space-sm);">July 2019</p>
-                            <p style="margin-bottom: 0;">Disruptive Machine Learning Applications in Insurance and Banking</p>
-                        </div>
-
-                        <div style="padding: var(--space-lg); background-color: var(--color-bg-alt); border-radius: var(--border-radius);">
-                            <h4 style="color: var(--color-accent); margin-bottom: var(--space-xs);">Intelligent Cities Summit</h4>
-                            <p style="font-size: var(--text-sm); color: var(--color-fg-light); margin-bottom: var(--space-sm);">November 2016</p>
-                            <p style="margin-bottom: 0;">Application of Machine Learning and Big Data to Improve Municipal Operations</p>
-                        </div>
-
-                        <div style="padding: var(--space-lg); background-color: var(--color-bg-alt); border-radius: var(--border-radius);">
-                            <h4 style="color: var(--color-accent); margin-bottom: var(--space-xs);">Alphaplus Board</h4>
-                            <p style="font-size: var(--text-sm); color: var(--color-fg-light); margin-bottom: var(--space-sm);">2018 – Present</p>
-                            <p style="margin-bottom: 0;">Board Member advancing equitable access to data-informed learning in adult education</p>
-                        </div>
-
-                        <div style="padding: var(--space-lg); background-color: var(--color-bg-alt); border-radius: var(--border-radius);">
-                            <h4 style="color: var(--color-accent); margin-bottom: var(--space-xs);">Data Social Club</h4>
-                            <p style="font-size: var(--text-sm); color: var(--color-fg-light); margin-bottom: var(--space-sm);">2017</p>
-                            <p style="margin-bottom: 0;">Co-founder of nonprofit corporation to promote data science and analytics</p>
-                        </div>
-                    </div>
-                </section>
-
             </div>
         </div>
     </main>
@@ -192,5 +212,8 @@
             </p>
         </div>
     </footer>
+
+    <!-- Navigation Script -->
+    <script src="js/navigation.js"></script>
 </body>
 </html>
