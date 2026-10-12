@@ -14,8 +14,7 @@
 .profile-page .profile-main p { margin-bottom: 1rem; }
 .profile-page .profile-main a { text-underline-offset: 3px; }
 .profile-page .profile-main a:hover { text-decoration: underline; }
-.profile-page .profile-main a:focus-visible,
-.profile-page summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+.profile-page .profile-main a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
 .profile-page .profile-nav {
   display: flex;
   gap: .25rem;
@@ -53,11 +52,10 @@
 .profile-page .achievement-list { padding-left: 1.25rem; margin: 1rem 0 1.25rem; }
 .profile-page .achievement-list li { margin-bottom: .75rem; padding-left: .15rem; }
 .profile-page .achievement-list li::marker { color: var(--color-accent); }
-.profile-page .career-detail { margin-top: 1rem; padding: .75rem 1rem; background: var(--color-bg-alt); border-radius: 6px; font-size: .9375rem; }
-.profile-page .career-detail summary { cursor: pointer; color: #39465a; font-weight: 700; }
-.profile-page .career-detail[open] summary { margin-bottom: .75rem; }
-.profile-page .career-detail p:last-child { margin-bottom: 0; }
+.profile-page .tech-stack { color: #565e68; font-size: .9375rem; }
+.profile-page .papers-heading { margin-top: 2.5rem; scroll-margin-top: calc(var(--header-height) + 6rem); }
 .profile-page .research-entry { margin: 1.5rem 0; }
+.profile-page .research-entry h3,
 .profile-page .research-entry h4 { font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 700; margin-bottom: .4rem; line-height: 1.5; }
 .profile-page .entry-meta { color: #565e68; font-size: .9375rem; }
 .profile-page .talk-list { list-style: none; margin: 0; padding: 0; }
@@ -86,5 +84,4 @@
   .profile-page .profile-section { margin-top: 1.5rem; padding-top: 1rem; }
   .profile-page h2, .profile-page h3, .profile-page h4 { break-after: avoid; }
   .profile-page .career-meta { break-after: avoid; }
-  .profile-page .career-detail { background: none; }
 }
