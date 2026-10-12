@@ -1,0 +1,90 @@
+/* Scoped to About and Resume. The homepage and its shared styles are unchanged. */
+.profile-page .profile-main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: calc(var(--header-height) + 2.5rem) 2rem 4rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.profile-page .profile-heading { text-align: center; margin-bottom: 2.25rem; }
+.profile-page .profile-heading h1 { margin-bottom: 1rem; }
+.profile-page .profile-positioning { color: var(--color-accent); font-weight: 700; }
+.profile-page .profile-main strong { font-weight: 700; }
+.profile-page .profile-main p { margin-bottom: 1rem; }
+.profile-page .profile-main a { text-underline-offset: 3px; }
+.profile-page .profile-main a:hover { text-decoration: underline; }
+.profile-page .profile-main a:focus-visible,
+.profile-page summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+.profile-page .profile-nav {
+  display: flex;
+  gap: .25rem;
+  padding: .5rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: var(--header-height);
+  z-index: var(--z-sticky);
+  overflow-x: auto;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+.profile-page .profile-nav a {
+  flex: 0 0 auto;
+  padding: .625rem .8rem;
+  color: #39465a;
+  font-size: .875rem;
+}
+.profile-page .profile-section {
+  margin-top: 3.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: calc(var(--header-height) + 6rem);
+}
+.profile-page .profile-section:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
+.profile-page .profile-section h2 { font-size: 1.65rem; margin-bottom: 1.75rem; }
+.profile-page .profile-main h3 { font-size: 1.25rem; }
+.profile-page .career-entry { margin: 0 0 2.75rem; padding-left: 1.25rem; border-left: 2px solid #dce3ee; scroll-margin-top: calc(var(--header-height) + 6rem); }
+.profile-page .career-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.profile-page .career-meta .employer { font-weight: 700; margin-bottom: .25rem; }
+.profile-page .career-meta .career-dates { color: #565e68; font-size: .875rem; flex-shrink: 0; margin-bottom: .5rem; }
+.profile-page .career-entry h3 { margin-bottom: .75rem; line-height: 1.45; }
+.profile-page .role-scope { color: #414953; }
+.profile-page .achievement-list { padding-left: 1.25rem; margin: 1rem 0 1.25rem; }
+.profile-page .achievement-list li { margin-bottom: .75rem; padding-left: .15rem; }
+.profile-page .achievement-list li::marker { color: var(--color-accent); }
+.profile-page .career-detail { margin-top: 1rem; padding: .75rem 1rem; background: var(--color-bg-alt); border-radius: 6px; font-size: .9375rem; }
+.profile-page .career-detail summary { cursor: pointer; color: #39465a; font-weight: 700; }
+.profile-page .career-detail[open] summary { margin-bottom: .75rem; }
+.profile-page .career-detail p:last-child { margin-bottom: 0; }
+.profile-page .research-entry { margin: 1.5rem 0; }
+.profile-page .research-entry h4 { font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 700; margin-bottom: .4rem; line-height: 1.5; }
+.profile-page .entry-meta { color: #565e68; font-size: .9375rem; }
+.profile-page .talk-list { list-style: none; margin: 0; padding: 0; }
+.profile-page .talk-list li { margin: 0 0 1.5rem; }
+.profile-page .talk-list h3 { font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 700; line-height: 1.5; margin-bottom: .25rem; }
+.profile-page .education-entry { margin-bottom: 1.75rem; }
+.profile-page .education-entry h3 { margin-bottom: .25rem; }
+.profile-page .profile-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; border-top: 1px solid var(--color-border); padding-top: 1.5rem; margin-top: 2rem; }
+.profile-page .profile-links a { padding: .5rem 0; }
+.profile-page .profile-contact { border-top: 1px solid var(--color-border); margin-top: 2.5rem; padding-top: 1.5rem; }
+.profile-page .anchor-alias { display: block; scroll-margin-top: calc(var(--header-height) + 6rem); }
+.profile-page .skip-link { z-index: 10003; top: -100px; }
+.profile-page .skip-link:focus { top: 0; }
+.profile-page .slide-menu[aria-hidden="true"] { visibility: hidden; }
+@media (max-width: 640px) {
+  .profile-page .profile-main { padding: calc(var(--header-height) + 2rem) 1.25rem 3rem; font-size: 1rem; }
+  .profile-page .profile-heading h1 { font-size: 2rem; }
+  .profile-page .profile-nav { margin-left: -.25rem; margin-right: -.25rem; }
+  .profile-page .career-meta { display: block; }
+  .profile-page .career-entry { padding-left: .875rem; }
+}
+@media print {
+  .profile-page .site-header, .profile-page .slide-menu, .profile-page .slide-menu-overlay,
+  .profile-page .profile-nav, .profile-page .skip-link, .profile-page .footer { display: none !important; }
+  .profile-page .profile-main { max-width: none; padding: 0; font-size: 11pt; }
+  .profile-page .profile-section { margin-top: 1.5rem; padding-top: 1rem; }
+  .profile-page h2, .profile-page h3, .profile-page h4 { break-after: avoid; }
+  .profile-page .career-meta { break-after: avoid; }
+  .profile-page .career-detail { background: none; }
+}
